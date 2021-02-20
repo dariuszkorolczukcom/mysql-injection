@@ -1,0 +1,22 @@
+{
+  "name": "mysql-injection",
+  "version": "1.0.0",
+  "description": "## Install MySQL and start the server:     <link>https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04</link> ## Create DB user and table: ```mysql CREATE DATABASE `database_injection`; CREATE USER 'indie'@'localhost' IDENTIFIED BY 'vaccineChip'; GRANT PRIVILEGE ON `database_injection` TO 'indie'@'localhost'; ``` ## Create table with dummy data: ```mysql CREATE TABLE `database_injection`.`agents`  (\t     `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,      `name` CHAR(40),     `net_worth` bigint ); ``` ```mysql INSERT INTO `database_injection`.`agents` (name,net_worth) VALUES (\"Mark Zuckerberg\",100000000000); INSERT INTO `database_injection`.`agents` (name) VALUES (\"Bill Gates\",129000000000); INSERT INTO `database_injection`.`agents` (name) VALUES (\"Jeff Bezos\",184600000000); INSERT INTO `database_injection`.`agents` (name) VALUES (\"Elom Musk\",199900000000); INSERT INTO `database_injection`.`agents` (name) VALUES (\"Me (Dariusz)\",17); ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dariuszkorolczukcom/mysql-injection.git"
+  },
+  "author": "Dariusz Korolczuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dariuszkorolczukcom/mysql-injection/issues"
+  },
+  "homepage": "https://github.com/dariuszkorolczukcom/mysql-injection#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
